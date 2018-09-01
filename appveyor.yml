@@ -7,7 +7,7 @@ dotnet_csproj:
   version: '{version}'
   package_version: '{version}'
 build_script:
-  - dotnet restore
+  - dotnet restore ./src
   - dotnet build ./src -c Release
 test_script:
   - dotnet test ./src/Larch.xUnit.Tests/Larch.xUnit.Tests.csproj
