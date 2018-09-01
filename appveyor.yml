@@ -1,0 +1,13 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+skip_tags: true
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+build_script:
+  - dotnet restore
+  - dotnet build ./src -c Release
+test_script:
+  - dotnet test ./src/Larch.xUnit.Tests/Larch.xUnit.Tests.csproj
