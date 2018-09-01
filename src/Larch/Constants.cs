@@ -2,8 +2,8 @@ namespace Larch
 {
     public static class Constants
     {
-        public const string ControllerHome = "Home";
+        public static readonly string ControllerHome = "Home";
 
-        public const string ActionIndex = "Index";
+        public static readonly string ActionIndex = "Index";
     }
 }
