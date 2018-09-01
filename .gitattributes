@@ -1,0 +1,5 @@
+src/Larch/wwwroot/lib/* linguist-vendored
+jquery.js linguist-vendored=true
+bootstrap.js linguist-vendored=true
+popper.js linguist-vendored=true
+bootstrap.css linguist-vendored=true
